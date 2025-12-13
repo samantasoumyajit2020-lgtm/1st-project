@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerospoil - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="card-header">
+                <span class="app-name">Zerospoil</span>
+            </div>
+            <h2>Login / Sign-Up</h2>
+
+            <button class="google-btn">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="google-icon">
+                Continue with Google
+            </button>
+
+            <div class="divider">
+                <span>Email login</span>
+            </div>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group password-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="toggle-password">
+                        <!-- Eye Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </span>
+                </div>
+
+                <button type="submit" class="login-btn">Log in</button>
+            </form>
+
+            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+
+            <script>
+                document.getElementById('login-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    window.location.href = 'analytics.html';
+                });
+            </script>
+
+            <div class="decorative-circle"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
