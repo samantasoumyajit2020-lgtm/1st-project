@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
 
+            // Toggle ARIA label
+            this.setAttribute('aria-label', type === 'text' ? 'Hide password' : 'Show password');
+
             // Toggle the eye icon style (optional visual feedback)
             this.style.opacity = type === 'text' ? '1' : '0.5';
         });
