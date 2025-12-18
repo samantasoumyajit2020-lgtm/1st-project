@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Toggle the eye icon style (optional visual feedback)
             this.style.opacity = type === 'text' ? '1' : '0.5';
+
+            // Toggle the aria-label
+            const newLabel = type === 'text' ? 'Hide password' : 'Show password';
+            this.setAttribute('aria-label', newLabel);
         });
     }
 });
